@@ -11,10 +11,10 @@ keywords: "Hexo, NexT"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: /
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2017
 
 # icon between year and author @Footer
 authoricon: heart
@@ -38,7 +38,7 @@ seo: false
 menu:
   home: /
   #categories: /categories
-  about: /about
+  #about: /about
   archives: /archives
   # tags: /tags
   #commonweal: /404.html
@@ -70,8 +70,8 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
+#scheme: Muse
+scheme: Mist
 #scheme: Pisces
 
 
@@ -141,14 +141,22 @@ font:
 #   Map a menu item to a specific FontAwesome icon name.
 #   Key is the name of the item and value is the name of FontAwsome icon. Key is case-senstive.
 #   When an globe mask icon presenting up means that the item has no mapping icon.
+# Social links
+social:
+  引号: https://HoltYin.github.io
+  # 等等
+
+# title
+links_title: Links
+links:
+
+# Social Icons
 social_icons:
   enable: true
-  # Icon Mappings.
-  # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
+  # Icon Mappings
   GitHub: github
   Twitter: twitter
-  Weibo: weibo
-
+  微博: weibo
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
@@ -245,7 +253,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # ---------------------------------------------------------------

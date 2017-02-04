@@ -2,9 +2,9 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-#scheme: Muse
+scheme: Muse
 #scheme: Mist
-scheme: Pisces
+#scheme: Pisces
 
 # Site
 title: 点滴
@@ -65,6 +65,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
+
 
 # Category & Tag
 default_category: uncategorized

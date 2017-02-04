@@ -2,13 +2,36 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
+#scheme: Muse
+#scheme: Mist
+scheme: Pisces
+
 # Site
-title: Hexo
+title: 点滴
 subtitle:
-description:
-author: John Doe
-language:
+description: 一点一滴
+author: YangSong
+language: zh-Hans
 timezone:
+avatar: /img/avg.jpg #头像
+
+menu:
+  home: /
+  archives: /archives
+  #about: /about
+  #categories: /categories
+  tags: /tags
+  #commonweal: /404.html
+
+menu_icons:
+  enable: true
+  # Icon Mapping.
+  home: home
+  about: user
+  categories: th
+  tags: tags
+  archives: archive
+  commonweal: heartbeat
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -64,6 +87,25 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+feed:
+  type: atom       #feed 类型 (atom/rss2)
+  path: atom.xml   #rss 路径
+  limit: 20        #在 rss 中最多生成的文章数(0显示所有)
+
+# 多说
+duoshuo_shortname: BinaryYS #评论
+duoshuo_hotartical: true #热评文章 true 或者 false
+duoshuo_share: true #分享服务
+
+
+# 微搜索
+## 首先安装 hexo-generator-searchdb，在站点的根目录下执行以下命令：npm install hexo-generator-searchdb --save
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

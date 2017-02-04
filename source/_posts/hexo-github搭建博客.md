@@ -11,10 +11,9 @@ title: hexo-github搭建个人博客
 ## 3.获取github账号
 3.1 github申请账号、配置[教程](http://note.youdao.com/noteshare?id=f9e40005274860eb585a07bb01f34416&sub=5BE205668CEE44BAB5B46113500A7D19)
 3.2 建立远程仓库
-<img src=”img/tp.jpg” width=”240” height=”275”>
+/*<img src="/img/tp1.jpg" width=”240” height=”200”>*/
 
 ## 4.
-
 
 ``` bash
 $ hexo new "My New Post"

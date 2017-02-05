@@ -37,10 +37,10 @@ seo: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
+  categories: /categories
   #about: /about
   archives: /archives
-  # tags: /tags
+  tags: /tags
   #commonweal: /404.html
   #guestbook: /guestbook
 
@@ -143,13 +143,15 @@ font:
 #   When an globe mask icon presenting up means that the item has no mapping icon.
 # Social links
 social:
-  引号: https://HoltYin.github.io
+  #
   # 等等
 
 # title
 links_title: Links
 links:
-
+   引号: https://HoltYin.github.io
+   半步多: https://jadyer.github.io/
+   追星少年: http://cmin.me/
 # Social Icons
 social_icons:
   enable: true
@@ -253,7 +255,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night
+highlight_theme: night eighties
 
 
 # ---------------------------------------------------------------
@@ -475,6 +477,12 @@ vendors:
   # https://github.com/hustcc/canvas-nest.js
   canvas_nest:
 
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD HH:mm:ss
+time_format: HH:mm:ss
 
 
 # Assets

@@ -6,6 +6,14 @@ scheme: Muse
 #scheme: Mist
 #scheme: Pisces
 
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD HH:mm:ss
+time_format: HH:mm:ss
+
+
 # Site
 title: 点滴
 subtitle:
@@ -13,13 +21,13 @@ description: 一点一滴
 author: YangSong
 language: zh-Hans
 timezone:
-avatar: /img/avg.jpg #头像
+avatar: /img/avatar.gif #头像
 
 menu:
   home: /
   archives: /archives
   #about: /about
-  #categories: /categories
+  categories: /categories
   tags: /tags
   #commonweal: /404.html
 
@@ -71,13 +79,6 @@ highlight:
 default_category: uncategorized
 category_map:
 tag_map:
-
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination

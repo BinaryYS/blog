@@ -95,6 +95,7 @@ feed:
   path: atom.xml   #rss 路径
   limit: 20        #在 rss 中最多生成的文章数(0显示所有)
 
+
 # 多说
 duoshuo_shortname: BinaryYS #评论
 duoshuo_hotartical: true #热评文章 true 或者 false
@@ -108,6 +109,12 @@ search:
   field: post
   format: html
   limit: 10000
+
+# add post views
+leancloud_visitors:
+  enable: true
+  app_id: mFE7pJ4Yskcyebh5QoG7rPIj-gzGzoHsz
+  app_key: gMAuDgqSAKgdRgV2v7L1p9Rq
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /favicon.ico
+favicon: images/favicon.ico
 
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, NexT"
@@ -149,9 +149,10 @@ social:
 # title
 links_title: Links
 links:
-   引号: https://HoltYin.github.io
+   引号: https://HoltYin.github.io/
    半步多: https://jadyer.github.io/
    追星少年: http://cmin.me/
+   石天泉: https://shitianquan.github.io/
 # Social Icons
 social_icons:
   enable: true

@@ -102,6 +102,11 @@ duoshuo_shortname: BinaryYS #评论
 duoshuo_hotartical: true #热评文章 true 或者 false
 duoshuo_share: true #分享服务
 
+#打赏
+# Donate 文章末尾显示打赏按钮
+reward_comment: 打赏一下 #这里写上你的jargon (Just whatever)
+wechatpay: /img/wypay.jpg #此处为微信向我付款二维码图片的相对或者是绝对URL
+alipay: /img/alipay.jpg #此处为支付宝向我付款二维码图片的相对或者是绝对URL
 
 # 微搜索
 ## 首先安装 hexo-generator-searchdb，在站点的根目录下执行以下命令：npm install hexo-generator-searchdb --save

@@ -73,8 +73,5 @@
   {% include '_scripts/baidu-push.swig' %}
   {% include '_components/algolia-search/assets.swig' %}
 
-  {% if theme.leancloud_visitors.enable %}
-  {% include '_scripts/lean-analytics.swig' %}
-  {% endif %}
 </body>
 </html>

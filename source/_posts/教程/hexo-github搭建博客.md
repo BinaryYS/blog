@@ -13,7 +13,7 @@ categories: 教程
 2.2 在dos窗口执行node -v检查配置是否完成
 
 ## 3.配置github
-3.1 如果没有github账号，则参考教程申请账号、配置连接 *[教程](http://note.youdao.com/noteshare?id=f9e40005274860eb585a07bb01f34416&sub=5BE205668CEE44BAB5B46113500A7D19)*
+3.1 如果没有github账号，则参考教程申请账号、配置连接 **[有道云教程](http://note.youdao.com/noteshare?id=f9e40005274860eb585a07bb01f34416&sub=5BE205668CEE44BAB5B46113500A7D19)**
 3.2 创建远程仓库blog用于管理博客源码,本地拉取blog的源码
 3.3 创建远程仓库用于存放编译blog生成的public文件，也就是能够访问到的静态文件，命名格式为 ***github账号.github.io***
 
@@ -26,10 +26,10 @@ npm install -g hexo-cli
 ``` bash
 $ hexo init
 ```
-<img src="/img/hexo/hexo-init.jpg" width=”240” height=”400”>
+<img src="/img/hexo/hexo-init.jpg" width=”200” height=”300”>
 
 4.3 将localblog中生成的文件全部拷贝到远程拉取的blog项目中
-<img src="/img/hexo/hexo-file.jpg" width=”240” height=”400”>
+<img src="/img/hexo/hexo-file.jpg" width=”200” height=”300”>
 
 4.4 在blog目录下执行命令拉取依赖的包
 ``` bash

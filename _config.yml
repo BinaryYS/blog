@@ -30,6 +30,7 @@ menu:
   categories: /categories
   tags: /tags
   #commonweal: /404.html
+  #guestbook: /guestbook
 
 menu_icons:
   enable: true

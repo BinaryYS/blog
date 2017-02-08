@@ -26,10 +26,10 @@ npm install -g hexo-cli
 ``` bash
 $ hexo init
 ```
-<img src="/img/hexo/hexo-init.jpg" width=”200” height=”300”>
+<img src="/img/hexo/hexo-init.jpg" width="650" height="800">
 
 4.3 将localblog中生成的文件全部拷贝到远程拉取的blog项目中
-<img src="/img/hexo/hexo-file.jpg" width=”200” height=”300”>
+<img src="/img/hexo/hexo-file.jpg" width="650" height="800">
 
 4.4 在blog目录下执行命令拉取依赖的包
 ``` bash

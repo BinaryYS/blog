@@ -1,7 +1,7 @@
 ---
 title: MySQL存储引擎
 date: 2017-02-08 09:46:05
-tags: [MySQL，存储引擎]
+tags: [MySQL, 存储引擎]
 categories: 笔记
 ---
 
@@ -34,7 +34,7 @@ categories: 笔记
    3.存储在Memory表中的数据如果突然丢失，不会对应用服务产生实质的负面影响。
    Memory同时支持散列索引和B树索引。B树索引的优于散列索引的是，可以使用部分查询和通配查询，也可以使用<、>和>=等操作符方便数据挖掘。散列索引进行“相等比较”非常快，但是对“范围比较”的速度就慢多了，因此散列索引值适合使用在=和<>的操作符中，不适合在<或>操作符中，也同样不适合用在order by子句中。
    使用MEMORY引擎示例：
-``` bash
+``` sql
  create table users
  (
      id smallint unsigned not null auto_increment,

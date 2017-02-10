@@ -53,6 +53,9 @@ categories: 笔记
 ### ARCHIVE
   Archive是归档的意思，在归档之后很多的高级功能就不再支持了，仅仅支持最基本的插入和查询两种功能。在MySQL 5.5版以前，Archive是不支持索引，但是在MySQL 5.5以后的版本中就开始支持索引了。Archive拥有很好的压缩机制，它使用zlib压缩库，在记录被请求时会实时压缩，所以它经常被用来当做仓库使用。
  
+### NDB
+MySQL 收购的一个集群存储引擎，类似于ORACLE的RAC引擎，但是NDB是share nothing集群架构。NDB的数据都是存储在内存中，所以主键的查找速率很快，并且可以通过增加存储结点，线性增加数据库的性能。
+ 
 ##查看MySql服务器支持的存储引擎
 ``` bash
 show engines

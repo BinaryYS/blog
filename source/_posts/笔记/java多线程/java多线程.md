@@ -83,7 +83,13 @@ public class SleepInterrupt extends Thread{
 }
 ``` 
 #### 暴力停止stop
-用stop的方法停止线程的方式不推荐使用，这是一种不安全的停止方式。
+用stop的方法停止线程的方式不推荐使用，这是一种不安全的停止方式,暴力停止可能会导致一些清理操作无法执行。
+
+#### return停止
+
+### 暂停、恢复线程
+suspend()暂停线程，resume()恢复线程。
+
 
 
 

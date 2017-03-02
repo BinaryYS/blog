@@ -146,7 +146,107 @@ Java线程中有两种线程，一种用户线程，另一种为守护线程。�
 
 ## 对象及变量的并发访问
 ### synchronized 方法
-非线程安全就是在多个线程对同一个对象的一个实例变量进行并发访问时出现“脏读”的现象，
+非线程安全就是在多个线程对同一个对象的一个实例变量进行并发访问时出现“脏读”的现象，读到的数据是被修改过的，线程安全就是获取的实例变量的值是同步处理的，避免脏读现象。
+#### 实例变量的线程安全
+
+方法内的变量是线程安全的，然而多个线程并发访问同一个对象的实例变量就是非线程安全的，此时会出现脏读。
+``` sql
+ public class synch {
+     //private int num = 0;  非线程安全
+      public void addI(String name) {
+       int num = 0;
+         if(name.eq("a")){
+              num = 100;
+              try
+             { Thread.sleep(1000);}
+             catch(InterruptedException e){
+                     e.printStackTrace();
+             }
+         else{
+             num = 200;
+             }
+         }
+      }
+ }
+ 
+```
+
+这种情况就是在addI()方法加上synchronized锁。
+
+#### 多个对象多个锁
+synchronized只能锁住同一个对象实例的一个方法，同一对象的多个实例不受约束，通过synchronized锁住的方法只能顺序访问。
+
+#### 脏读
+``` sql
+public class MyObject {
+
+    private String name = "A";
+    private String pwd = "AA";
+
+    synchronized public void setValue(String _name, String _pwd){
+        this.name = _name;
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        this.pwd = _pwd;
+
+    }
+
+   /*synchronized*/ public void getValue(){
+        System.out.println(Thread.currentThread().getName()+"name:"+this.name+"&"+"pwd:"+this.pwd);
+    }
+}
+
+
+/**
+ * Created by song.yang on 2017/3/2：17:00.
+ * <p>
+ * e-mail:song.yang@msxf.com
+ */
+
+public class MyThread extends Thread {
+    private MyObject mo;
+    public MyThread(MyObject _mo) {
+        this.mo = _mo;
+    }
+
+    public void run(){
+        mo.setValue("B", "BB");
+    }
+
+}
+
+
+public class MyTest {
+    public static void main(String[] args) {
+        MyObject mo = new MyObject();
+        MyThread mt = new MyThread(mo);
+        mt.start();
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        mo.getValue();
+    }
+
+
+}
+```
+线程调用对象的同步方法获得对象锁，其他线程不能获取对象的锁，即其他线程不能调用该对象的所有同步方法，但是其他线程可以调用该对象的非同步方法。
+
+#### synchronized 锁重入
+
+一个线程获取对象锁之后，是可以连续请求以连续获得该对象的锁，即在一个synchronized修饰的方法块内再次调用该对象的其他同步方法是可以的。
+
+#### synchronized 锁释放
+出现异常，直接自动释放锁
+
+#### 同步不具有继承性
+
+
 
 
 

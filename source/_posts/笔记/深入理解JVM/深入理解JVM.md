@@ -1,7 +1,8 @@
 ---
-title: redis实战
-date: 2017-02-13 15:07:26
-tags: redis
+title: 深入理解JVM
+date: 2017-06-16 16:48:20
+tags: [jvm]
 categories: 笔记
 ---
-##
+## 前言
+  java是世界上最好的语言！！！
